@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Receiver</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="app">
+      <div class="screen join-screen active">
+        <div class="form">
+          <h2>Share your files securely</h2>
+          <div class="form-input">
+            <label for="join-id">Join ID</label>
+            <input type="text" id="join-id" placeholder="Enter your join ID" />
+          </div>
+          <div class="form-input">
+            <button id="receiver-start-con-btn">Connect Room</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="screen fs-screen">
+        <div class="files-list">
+          <div class="title">Shared files</div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="receiver.js"></script>
+  </body>
+</html>
